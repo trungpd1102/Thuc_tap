@@ -1,0 +1,171 @@
+*{margin:0px; padding:0px;}
+a {
+    text-decoration: none;
+}
+ 
+.header {
+    padding: 10px 0;
+    background: #0098DB;
+    color: #fff;
+}
+.header  ul {
+    list-style: none;
+	margin-left: 10px;
+}
+.header  ul  li {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 15px;
+	color: #903;
+}
+.header  ul li  a {
+	color: white;
+    display: inline-block;
+}
+ .header-right_0{
+	margin-left: 450px;
+	text-align: center;
+	padding-top: 4px;
+	height: 25px;
+	width:100px;
+	background-color:#3c9f10;
+	border-radius: 3px;
+	color: white;
+}
+ .header-right_1{
+	
+	text-align: center;
+	padding-top: 4px;
+	margin-left: 700px;
+	height: 25px;
+	width:100px;
+	background-color:red;
+	border-radius: 3px;
+	color: white;
+}
+.header-right_2{
+	border-radius: 3px;
+	text-align: center;
+	padding-top: 4px;
+	height: 25px;
+	width:100px;
+	background-color:green;
+	color: white;
+}
+.menu{
+	height: 50px;
+    background: #f8f8f8;
+    color: #fff;
+}
+.menu  ul {
+    list-style: none;
+	margin-left: 10px;
+	
+}
+.menu  ul  li {
+    display: inline-block;
+   
+    font-weight: 700;
+    font-size: 16px;
+	color: #903;
+	line-height: 52px;
+	text-align:center;
+	width:150px;
+;
+}
+.menu  ul li  a {
+	color: black;
+    display: inline-block;
+}
+.right{
+	margin-left: 65px;
+	background-color: blue;
+	color: #000;
+}
+
+.img{
+	float: left;
+}
+.body{ 
+	margin: auto;
+	width: 1200px;
+	height: 1000px;
+	
+}
+.center{
+	width: 900px;
+	height: 1000px;
+	float: left;
+}
+.sidebar{
+	width: 300px;
+	height: 1000px;
+	background-color: gray;
+	float: left;
+}
+.footer{
+	
+    background: #0098DB;
+    color: #fff;
+	 padding: 10px 0 10px 0;
+   
+}
+.footer .tt{
+	margin-left: 100px;
+	float: left	;
+	
+}
+.footer .tt ul{list-style: none;}
+
+.footer .cs{
+	margin-right: 300px;
+}
+.cs ul{
+	
+	list-style: none;
+}
+.cs ul li a{
+	
+	color: white;
+}
+input[type="text"] {
+      width: 200px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 4px;
+      outline:none;
+      padding: 6px 7px;
+    }
+button{
+	  padding: 6px 7px;
+	  border-radius: 4px;
+}
+.canho{
+	padding: 10px 25px 0px 25px;
+	
+}
+.slect{
+	width:250px;
+	height: 250px;
+	background-color: white;
+	-moz-border-radius-bottomleft:10px;
+-webkit-border-bottom-left-radius:10px;
+-moz-border-radius-bottomright:10px;
+-webkit-border-bottom-right-radius:10px;
+}
+select{
+	width:210px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 3px;
+}
+.timkiem{
+	margin-top: 10px;
+	margin-left: 70px;
+	background-color: #055699;
+	color: red;
+	border-radius: 8px;
+}
