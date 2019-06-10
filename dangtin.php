@@ -46,7 +46,7 @@
 			$up=move_uploaded_file($tp1,'images/'.$tp2);
 	include('connect.php');
 
-			$s= "insert into thuecanho (Ten,Loainha,Loaiphong,Diachi,Phongngu,Phongtam,Mota,Gia	,Anh) values('$tennha','$loainha','$loaiphong','$diachi','$phongngu','$phongtam','$gia','$nd','$anh')";
+			$s= "insert into thuecanho (Ten,Loainha,Loaiphong,Diachi,Phongngu,Phongtam,Mota,Gia	,Anh) values('$tennha','$loainha','$loaiphong','$diachi','$phongngu','$phongtam','$gia','$nd','$tp2')";
 			$tt= mysqli_query($con,$s);
 			
 	}
