@@ -25,7 +25,7 @@ a {
     display: inline-block;
 }
  .header-right_0{
-	margin-left: 450px;
+	
 	text-align: center;
 	padding-top: 4px;
 	height: 25px;
@@ -38,7 +38,7 @@ a {
 	
 	text-align: center;
 	padding-top: 4px;
-	
+	margin-left: 450px;
 	height: 25px;
 	width:100px;
 	background-color:red;
@@ -80,10 +80,11 @@ a {
     display: inline-block;
 }
 .right{
-	margin-left: 200px;
-	background-color: blue;
+margin-left: 200px;}
+#tt{ background-color: blue;
 	color: #000;
 }
+
 
 
 .body{ 
