@@ -13,7 +13,7 @@
 		<ul >
 			<li class="header-left"><a href="tel:0363994444">Hotline: 0967.xxx.xxx</a></li>
 			<li class="header-left"><a href="mailto:thuenha@gmail.com">Email: thuecanho@gmail.com</a></li>
-				<li class="header-right_0" ><a href="#">Đăng tin  rao</a></li>
+				
 			<li class="header-right_1" ><a href="#">Đăng nhập</a></li>
 			<li class="header-right_2"><a href="#">Đăng ký</a></li>
 		</ul>
@@ -21,9 +21,9 @@
 	<div class="menu">
 
 		<ul >
-			<li class="right"><a href="#">Trang chủ</a></li>
-			<li class=""><a href="#">Đăng căn hộ</a></li>
-			<li class=""><a href="#">Thuê căn hộ</a></li>
+			<li class="right"><a href="index.html">Trang chủ</a></li>
+			<li class="" id="tt"><a href="#">Đăng căn hộ</a></li>
+			<li class=""><a href="chothuenha.php">Thuê căn hộ</a></li>
 			<li class=""><a href="#">Trợ giúp</a></li>
 		</ul>
 
@@ -45,7 +45,6 @@
 			$tp2=$_FILES['anh']['name'];
 			$up=move_uploaded_file($tp1,'images/'.$tp2);
 	include('connect.php');
-
 			$s= "insert into thuecanho (Ten,Loainha,Loaiphong,Diachi,Phongngu,Phongtam,Mota,Gia	,Anh) values('$tennha','$loainha','$loaiphong','$diachi','$phongngu','$phongtam','$gia','$nd','$tp2')";
 			$tt= mysqli_query($con,$s);
 			
