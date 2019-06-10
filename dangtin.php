@@ -41,6 +41,9 @@
 		$gia=$_POST['gia'];
 		$nd=$_POST['nd'];
 		$anh= $_POST['anh'];
+		$tp1=$_FILES['anh']['tmp_name'];
+			$tp2=$_FILES['anh']['name'];
+			$up=move_uploaded_file($tp1,'images/'.$tp2);
 	include('connect.php');
 
 			$s= "insert into thuecanho (Ten,Loainha,Loaiphong,Diachi,Phongngu,Phongtam,Mota,Gia	,Anh) values('$tennha','$loainha','$loaiphong','$diachi','$phongngu','$phongtam','$gia','$nd','$anh')";
