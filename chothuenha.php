@@ -64,8 +64,8 @@
   <td><?php echo $row['Mota']?></td>    
   <td><?php echo $row['Gia']?></td>   
    <td><img src=<?php echo "images/".$row['Anh']?>  width='50px' height='50px'/></td> 
-		<td><a href="del.php?id=<?php echo $row['ID']?>" onClick="if(confirm('Bạn có chắc chắn muốn hủy '))return true;else return false;">Hủy yêu cầu</a></td>
-        <td><a href="up.php?id=<?php echo $row['ID'];?>">Sửa</td>
+		<td><a href="huyyeucau.php?id=<?php echo $row['ID']?>" onClick="if(confirm('Bạn có chắc chắn muốn hủy '))return true;else return false;">Hủy yêu cầu</a></td>
+        <td><a href="sua.php?id=<?php echo $row['ID'];?>">Sửa</td>
     </tr>
 	
     <?php }?>   
