@@ -76,7 +76,7 @@
 		$repass=$_POST['pass2'];
 		if ($pass==$repass)
 		{
-			$sql="insert into nhanvien(Name,Address,Phone,Account,Password) values('$hoten', '$diachi' ,'$phone' ,'$ttk','$pass')";
+			$sql="insert into dangky(Name,Address,Phone,Account,Password) values('$hoten', '$diachi' ,'$phone' ,'$ttk','$pass')";
 			$thucthi= mysqli_query($con,$sql);
 			if($thucthi) { "<script> alert('Thanh cong')</script>";
  							 header ('location:Index.php');}

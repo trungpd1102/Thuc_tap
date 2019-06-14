@@ -54,26 +54,26 @@
 			$user=$_POST['tendn'];
 			$pass=$_POST['mk'];
 			if ($user=='admin'){// Kiểm tra nếu là tài khoản Admin thì chuyển đến trang hienthi_admin.php. Có thể sửa, xóa các bản ghi(người dùng ) và biết được mật khẩu
-				$sqldn="select * from nhanvien where Account='admin' and Password='12'";
-				$thucthidn=mysqli_query($conn,$sqldn);
+				$sqldn="select * from dangky where Account='admin' and Password='12'";
+				$thucthidn=mysqli_query($con,$sqldn);
 				$num=mysqli_num_rows($thucthidn);
 				
 				if($num==1)
 				{
 					$_SESSION['name']=$user;
-					header('location:hienthi_admin.php');
+					header('location:Index.php');
 					}
 					else echo "<script> alert(Không đăng nhập được! Tài khoản hoặc mật khẩu không đúng)</script>";
 					}
 			else{// Nếu không là tkhoan Admin thì đăng nhập vào trang hienthi.php, trang này chỉ có thể xem thông tin
-				$sqldn1="select * from nhanvien where Account='$user' and Password='$pass'";
-				$thucthidn1=mysqli_query($conn,$sqldn1);
+				$sqldn1="select * from dangky where Account='$user' and Password='$pass'";
+				$thucthidn1=mysqli_query($con,$sqldn1);
 				$num1=mysqli_num_rows($thucthidn1);
 				
 				if($num1==1)
 				{
 					$_SESSION['name']=$user;
-					header('location:hienthi.php');
+					header('location:Index.php');
 					}
 					else echo "<script> alert(Không đăng nhập được! Tài khoản hoặc mật khẩu không đúng)</script>";
 					}
